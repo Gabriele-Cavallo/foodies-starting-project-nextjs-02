@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function DynamicMeals({params}){
+export default function MealDetailsPage({params}){
     return (
-        <main>
-            <h1>Dynamic meal</h1>
+        <>
+            <h1>Meal detail</h1>
             <p>{params.slug}</p>
-            <Link href="./">Home</Link>
-        </main>
+            <p><Link href="/">Home</Link></p>
+        </>
     )
 }
